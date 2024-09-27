@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <img src="midia/logo.png" alt="">
+        <h1>Contato</h1>
+    </header>
+    <nav class="nav">
+        <a class="button1" href="produtos.html" target="_self">Produtos</a>
+        <a class="button1" href="index.html" target="_self">Página Inicial</a>
+    </nav>
+    <main>
+        <section class="empresa">
+            <h1>DADOS DA EMPRESA</h1>
+            <p>Endereço: Av. Bernardino Flora Furlan, 1677 - Parque Pederneiras II, Pederneiras - SP, 17280-000</p>
+            <p>CNPJ: 23.327.237/723</p>
+            <p>Data de Criação: 26/09/2024</p>
+            <p>E-mail: senaipederneiras23@gmail.com</p>
+        </section>
+    </main>
+    <section class="mod" id="empresa">
+        <section class="section-principal" id="section-principal">
+            <h1>Formulário do Usuário</h1>
+            <form id="cadastroForm">
+                <form action="https://formsubmit.co/senaipederneiras23@gmail.com" method="POST"></form>
+                <fieldset>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="NOME" placeholder="Informe seu nome" required>
+                </fieldset>
+                <fieldset>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="SOBRENOME" placeholder="Informe seu sobrenome" required>
+                </fieldset>
+                <fieldset>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="CPF" id="cpf" placeholder="000.000.000-00" required>
+                </fieldset>
+                <fieldset>
+                    <label for="rg">RG:</label>
+                    <input type="text" id="rg" name="RG" required maxlength="12" placeholder="00.000.000-A"
+                    oninput="this.value = this.value.replace(/[^0-9Xx]/g, '').replace(/^(\d{2})(\d{3})(\d{3})([0-9Xx]{1})$/, '$1.$2.$3-$4')"><br>
+                </fieldset>
+                <fieldset>
+                    <label for="endereco">Endereço:</label>
+                    <p>Informe os campos sobre seu endereço:</p>
+                    <p>Rua:<input type="text" name="RUA" id="rua" placeholder="Nome da rua "></p>
+                    <p>Número da casa: <input type="number" name="CASA" id="ncasa" placeholder="Apenas números"></p>
+                    <p>Complemento: <textarea name="COMPLEMENTO" id="complemento"></textarea></p>
+                    <p>Bairro: <input type="text" name="BAIRRO" id="bairro" placeholder="Nome do Bairro"></p>
+                    <p>Cidade: <input type="text" name="CIDADE" id="cidade" placeholder="Nome da Cidade"></p>
+                    <p>Estado:
+                        <select id="estado" name="Estado" required>
+                            <option value="" disabled selected>Escolha seu estado</option>
+                            <option value="Acre">Acre</option>
+                            <option value="Alagoas">Alagoas</option>
+                            <option value="Amapá">Amapá</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Bahia">Bahia</option>
+                            <option value="Ceará">Ceará</option>
+                            <option value="Distrito Federal">Distrito Federal</option>
+                            <option value="Espírito Santo">Espírito Santo</option>
+                            <option value="Goiás">Goiás</option>
+                            <option value="Maranhão">Maranhão</option>
+                            <option value="Mato Grosso">Mato Grosso</option>
+                            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                            <option value="Minas Gerais">Minas Gerais</option>
+                            <option value="Pará">Pará</option>
+                            <option value="Paraíba">Paraíba</option>
+                            <option value="Paraná">Paraná</option>
+                            <option value="Pernambuco">Pernambuco</option>
+                            <option value="Piauí">Piauí</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                            <option value="Rondônia">Rondônia</option>
+                            <option value="Roraima">Roraima</option>
+                            <option value="Santa Catarina">Santa Catarina</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Sergipe">Sergipe</option>
+                            <option value="Tocantins">Tocantins</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <label for="telefone">Número de Telefone:</label>
+                    <input type="tel" id="telefone" name="TELEFONE" maxlength="15" placeholder="(xx) xxxxx-xxxx"/>
+                </fieldset>
+                <fieldset>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="E-MAIL" placeholder="Informe seu e-mail" required>
+                </fieldset>
+                <fieldset>
+                    <h3>Gênero:</h3>
+                    <label>
+                        <input type="radio" name="GÊNERO" value="Masculino" required> Masculino
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="GÊNERO" value="Feminino"> Feminino
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <h3>Preferências de Contato</h3>
+                    <label>
+                        <input type="checkbox" name="CONTATO" value="E-mail">E-mail
+                    </label>
+                    <label>
+                        <input type="checkbox" name="CONTATO" value="Telefone">Telefone
+                    </label>
+                    <label>
+                        <input type="checkbox" name="CONTATO" value="sms">SMS
+                    </label>
+                </fieldset>
+                <fieldset class="centralizar">
+                    <label for="foto" class="customizar-botao">Adicione uma foto de perfil</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" required>
+                </fieldset>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </section>
+        <section class="section-secundaria" id="section-secundaria">
+            <div id="result"></div>
+        </section>
+   
+    </section>
+    <footer>
+        <p>Direitos pertencentes a Toy Fantasy company ltda.</p>
+    </footer>
+
+     
+    <script src="script.js"></script>
+    
+</body>
+</html>

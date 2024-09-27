@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 7px;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
+}
+
+:root{
+    --color-1: yellow;
+    --cor-2:rgb(132, 193, 152);
+    --cor-3:rgb(255, 255, 255);
+    --cor-4:rgb(183, 254, 194);
+    --cor-5:white;
+    --cor-6:green;
+    --cor-7:rgb(182, 213, 255);
+    --cor-8:rgb(26, 26, 99);
+    --cor-9:rgb(123, 123, 123);   
+    --cor-gradient: linear-gradient(to right, var(--cor-2), var(--cor-4) )
+
+}
+
+body{
+    margin: 3px;
+    background: var(--cor-3);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+p{
+    color: var(--cor-8);
+}
+
+header{
+    padding: 7px;
+    align-items: center;
+    text-align: center;
+    background-image: var(--cor-gradient);
+    height: 200px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header h1{
+    color: var(--cor-8);
+}
+
+.nav{
+    background-color: aquamarine;
+    padding: 7px;
+    margin: 0 auto;
+    height: 23px;
+    text-align: center;
+    font-size: 23px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+nav a{
+    margin: 23px;
+    text-decoration: none;
+    color: var(--cor-5);
+}
+
+nav a:hover{
+    color: var(--cor-6);
+}
+
+.principal{
+    justify-content: center;
+    display: flex;
+    margin-top: 32px;
+    background: var(--cor-7);
+    padding: 7px;
+    border-radius: 23px;
+}
+
+.conteudo1 {
+    position: relative;
+    width: 481px;
+    height: 423px;
+    overflow: hidden;
+    padding-bottom: 0px;
+}
+
+.conteudo1 img {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    transition: opacity 1s ease;
+    opacity: 0;
+    border-radius: 7px;
+}
+
+input#img1:checked ~ figure img:nth-of-type(1),
+input#img2:checked ~ figure img:nth-of-type(2),
+input#img3:checked ~ figure img:nth-of-type(3) {
+    opacity: 1;
+}
+
+.conteudo1 nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+label {
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 23px;
+    margin: 0 5px;
+}
+
+.conteudo2{
+    width: 723px;
+    height: 479px;
+    margin-left: 23px;
+    padding: 7px;
+    text-align: justify;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.mod{
+    justify-content: center;
+    display: flex;
+    padding: 32px;
+}
+
+.cont{
+    margin-top: 0px;
+    margin: 23px;
+    background-color:aquamarine;
+    width: 323px;
+    height: 323px;
+    border-radius: 7px;
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    padding: 7px;
+}
+
+.cont h1{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+}
+
+
+.video{
+    margin: 0 auto;
+    margin-top:18px;
+    background: var(--cor-7);
+    width: 723px;
+    height: 423px;
+    border-radius: 7px;
+    text-align: center;
+    padding: 7px;
+}
+
+
+footer{
+    background: var(--cor-9);
+    width: 100%;
+    height: 73px;
+    text-align: center;
+    color: var(--cor-5);
+    font-family: "Open Sans", sans-serif;
+    margin-top: 23px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 23px;
+}
+
+.container img{
+    transition: ease-in 123ms;
+}
+
+.container img:hover{
+    transition: ease-in calc(1.3);
+    transform: scale(1.3);
+}
+
+.produto {
+    width: 18%; /* Define a largura dos produtos */
+    margin-bottom: 20px; /* Espaço entre as fileiras */
+    text-align: center; /* Centraliza o conteúdo do produto */
+}
+
+img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+h3 {
+    margin-top: 10px; /* Espaço acima do título do produto */
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 45%; /* 2 produtos por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 100%; /* 1 produto por linha em telas muito pequenas */
+    }
+}
+
+.empresa{
+    background-color: rgb(232, 232, 232);
+    margin: 23px;
+    padding: 7px;
+    border-radius: 23px;
+}
+
+.empresa h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+}
+
+#empresa{
+    background-color: rgb(232, 232, 232);
+    margin: 23px;
+    padding: 7px;
+    border-radius: 23px;
+}
+
+#empresa h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+}
+
+.section-principal{
+    width: 323px;
+    margin: 0 auto;
+    
+}
+
+button {
+    bottom: 20px;
+    font-size: 99px;
+    cursor: pointer;
+    width: 100%;
+    height: 32px;
+    margin-top: 1%;
+    border-radius: 23px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.7s;
+    font-size: 16px;
+}
+
+button:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.7ms;
+}
+
+.customizar-botao{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mover-principal {
+    transform: translateX(-210px);
+}
+
+.aparecer-secundaria {
+    transform: translateX(-323px);
+    opacity: 1;
+}
+
+.customizar-botao:hover{
+    background-color: #0021c7;
+    color: rgb(246, 255, 0);
+}
+
+.centralizar {
+    text-align: center;
+}
+
+.quiz{
+    text-align: center;
+    background-color: rgb(232, 232, 232);
+    width: 423px;
+    height: 103px;
+    border-radius: 23px;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.quiz a{
+    text-decoration: none;
+    color: rgb(17, 2, 56);
+    font-size: 23px;
+    font-family: "Ubuntu", sans-serif;
+    background: rgb(129, 253, 255);
+    padding: 7px;
+    border-radius: 23px;
+    box-shadow: 1px 2px 3px black;
+}
+
+.quiz a:hover{
+    color: hsl(0, 100%, 50%);
+}
+
+.quiz-section{
+    padding: 23px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.quiz-section h2{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.question{
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+button:disabled{
+    background-color: #b0b0b0;
+    color: #ffffff;
+    border: none;
+}
+
+#result1{
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+
+}
+

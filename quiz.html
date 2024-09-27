@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz HTML CSS</title>
+</head>
+<body>
+   
+    <section class="quiz-section">
+        <h2>Quiz de Conhecimentos WWII</h2>
+        <form id="quiz-form">
+            <section class="question">
+                <h3>1. Quando começou a Segunda Guerra Mundial?</h3>
+                <label><input type="radio" name="q1" value="A" onclick="disableOptions('q1'), playSound()"> A) 1945</label><br>
+                <label><input type="radio" name="q1" value="B" onclick="disableOptions('q1'), playSound()"> B) 1939</label><br>
+                <label><input type="radio" name="q1" value="C" onclick="disableOptions('q1'), playSound()"> C) 2001</label><br>
+                <label><input type="radio" name="q1" value="D" onclick="disableOptions('q1'), playSound()"> D) 1942</label>
+            </section>
+
+            <section class="question">
+                <h3>2. O que começou a guerra?</h3>
+                <label><input type="radio" name="q2" value="A" onclick="disableOptions('q2'), playSound()"> A) Covid</label><br>
+                <label><input type="radio" name="q2" value="B" onclick="disableOptions('q2'), playSound()"> B) Pobreza dos países Baixos</label><br>
+                <label><input type="radio" name="q2" value="C" onclick="disableOptions('q2'), playSound()"> C) Impostos</label><br>
+                <label><input type="radio" name="q2" value="D" onclick="disableOptions('q2'), playSound()"> D) Invasão de Hitler à Polônia</label>
+            </section>
+
+            <section class="question">
+                <h3>3. Quem era o Ministro da Inglaterra?</h3>
+                <label><input type="radio" name="q3" value="A" onclick="disableOptions('q3'), playSound()"> A) Winston Churchill</label><br>
+                <label><input type="radio" name="q3" value="B" onclick="disableOptions('q3'), playSound()"> B) Lula</label><br>
+                <label><input type="radio" name="q3" value="C" onclick="disableOptions('q3'), playSound()"> C) Bolosnaro</label><br>
+                <label><input type="radio" name="q3" value="D" onclick="disableOptions('q3'), playSound()"> D) Putin</label>
+            </section>
+
+            <section class="question">
+                <h3>4. Quem perdeu a guerra?</h3>
+                <label><input type="radio" name="q4" value="A" onclick="disableOptions('q4'), playSound()"> A) Pederneiras</label><br>
+                <label><input type="radio" name="q4" value="B" onclick="disableOptions('q4'), playSound()"> B) Macacos</label><br>
+                <label><input type="radio" name="q4" value="C" onclick="disableOptions('q4'), playSound()"> C) Alemanha Nazista</label><br>
+                <label><input type="radio" name="q4" value="D" onclick="disableOptions('q4'), playSound()"> D) EUA</label>
+            </section>
+
+            <section class="question">
+                <h3>5. Quem venceu a guerra?</h3>
+                <label><input type="radio" name="q5" value="A" onclick="disableOptions('q5'), playSound()"> A) Aliados</label><br>
+                <label><input type="radio" name="q5" value="B" onclick="disableOptions('q5'), playSound()"> B) Eixo</label><br>
+                <label><input type="radio" name="q5" value="C" onclick="disableOptions('q5'), playSound()"> C) Marking Store</label><br>
+                <label><input type="radio" name="q5" value="D" onclick="disableOptions('q5'), playSound()"> D) Rock Lee</label>
+            </section>
+
+            <section class="question">
+                <h3>6. Quando acabou a guerra?</h3>
+                <label><input type="radio" name="q6" value="A" onclick="disableOptions('q6'), playSound()"> A) 2010</label><br>
+                <label><input type="radio" name="q6" value="B" onclick="disableOptions('q6'), playSound()"> B) 1938</label><br>
+                <label><input type="radio" name="q6" value="C" onclick="disableOptions('q6'), playSound()"> C) 1945</label><br>
+                <label><input type="radio" name="q6" value="D" onclick="disableOptions('q6'), playSound()"> D) 2024</label>
+            </section>
+
+            <section class="question">
+                <h3>7. Qual povo foi quase que exterminado por Hitler?</h3>
+                <label><input type="radio" name="q7" value="A" onclick="disableOptions('q7'), playSound()"> A) Judeus</label><br>
+                <label><input type="radio" name="q7" value="B" onclick="disableOptions('q7'), playSound()"> B) Yanomamis</label><br>
+                <label><input type="radio" name="q7" value="C" onclick="disableOptions('q7'), playSound()"> C) Clã Uchirra</label><br>
+                <label><input type="radio" name="q7" value="D" onclick="disableOptions('q7'), playSound()"> D) Ronaldinho Gaúcho</label>
+            </section>
+
+            <button type="submit" id="enviar" onclick="submitQuiz(event)">Enviar Respostas</button>
+            <button type="button" id="reenviar" onclick="restartQuiz()" disabled>Responder Novamente</button>
+        </form>
+        <section id="result1"></section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
