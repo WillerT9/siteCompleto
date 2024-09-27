@@ -178,7 +178,10 @@ function submitQuiz(event) {
         q4: 'C',
         q5: 'A',
         q6: 'C',
-        q7: 'A'
+        q7: 'A',
+        q8: 'A',
+        q9: 'A',
+        q10: 'A'
     };
 
     let form = document.getElementById('quiz-form');

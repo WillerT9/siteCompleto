@@ -8,9 +8,16 @@
     <title>Quiz HTML CSS</title>
 </head>
 <body>
+    <header>
+        <img src="midia/logo.png" alt="">
+        <h1>Toy Fantasy</h1>
+    </header>
+    <nav class="nav">
+        <a class="button1" href="produtos.html" target="_self">Produtos</a>
+        <a class="button1" href="contato.html" target="_self">Contato</a>
+        <a class="button1" href="quiz.html" target="_blank">Quiz</a>
+    </nav>
    <main class="fundo">
-    
-       
         <section class="quiz-section">
             <h2>Quiz de Conhecimentos WWII</h2>
             <form id="quiz-form">
@@ -63,6 +70,29 @@
                     <label><input type="radio" name="q7" value="C" onclick="disableOptions('q7'), playSound()"> C) Clã Uchirra</label><br>
                     <label><input type="radio" name="q7" value="D" onclick="disableOptions('q7'), playSound()"> D) Ronaldinho Gaúcho</label>
                 </section>
+
+                <section class="question">
+                    <h3>8. Quem era líder da Alemanha Nazista?</h3>
+                    <label><input type="radio" name="q8" value="A" onclick="disableOptions('q8'), playSound()"> A) Adolf Hitler</label><br>
+                    <label><input type="radio" name="q8" value="B" onclick="disableOptions('q8'), playSound()"> B) Adolfo Hitler</label><br>
+                    <label><input type="radio" name="q8" value="C" onclick="disableOptions('q8'), playSound()"> C) Danzo</label><br>
+                    <label><input type="radio" name="q8" value="D" onclick="disableOptions('q8'), playSound()"> D) Macaquinho</label>
+                </section>
+                <section class="question">
+                    <h3>9. Queal cidade foi bombardeado por bombas atômicas em 1945?</h3>
+                    <label><input type="radio" name="q9" value="A" onclick="disableOptions('q9'), playSound()"> A) Japão</label><br>
+                    <label><input type="radio" name="q9" value="B" onclick="disableOptions('q9'), playSound()"> B) Pederneiras</label><br>
+                    <label><input type="radio" name="q9" value="C" onclick="disableOptions('q9'), playSound()"> C) Konoha</label><br>
+                    <label><input type="radio" name="q9" value="D" onclick="disableOptions('q9'), playSound()"> D) Hiroshima</label>
+                </section>
+                <section class="question">
+                    <h3>10. Qual era o nome da bomba jogada em Nagasaki?</h3>
+                    <label><input type="radio" name="q10" value="A" onclick="disableOptions('q10'), playSound()"> A) Fat Man</label><br>
+                    <label><input type="radio" name="q10" value="B" onclick="disableOptions('q10'), playSound()"> B) X-45</label><br>
+                    <label><input type="radio" name="q10" value="C" onclick="disableOptions('q10'), playSound()"> C) Little Boy</label><br>
+                    <label><input type="radio" name="q10" value="D" onclick="disableOptions('q10'), playSound()"> D) SENAI</label>
+                </section>
+
                 <button type="submit" id="enviar" onclick="submitQuiz(event)">Enviar Respostas</button>
                 <button type="button" id="reenviar" onclick="restartQuiz()" disabled>Responder Novamente</button>
             </form>

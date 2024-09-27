@@ -25,7 +25,7 @@
 
 :root{
     --color-1: yellow;
-    --cor-2:rgb(132, 193, 152);
+    --cor-2:rgb(50, 69, 56);
     --cor-3:rgb(255, 255, 255);
     --cor-4:rgb(183, 254, 194);
     --cor-5:white;
@@ -358,5 +358,5 @@ button:disabled{
 }
 
 .fundo{
-    background: var(--cor-gradient);
+    background: var(--cor-2);
 }
