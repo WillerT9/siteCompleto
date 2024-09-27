@@ -160,6 +160,11 @@ function disableOptions(questionName) {
     });
 }
 
+function playSound() {
+    let clickSound = document.getElementById('selecionasom');
+    clickSound.play();
+}
+
 
 // Função para enviar o quiz e calcular a pontuação
 function submitQuiz(event) {

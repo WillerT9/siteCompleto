@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
     <title>Quiz HTML CSS</title>
 </head>
 <body>
@@ -31,7 +32,7 @@
                     <h3>3. Quem era o Ministro da Inglaterra?</h3>
                     <label><input type="radio" name="q3" value="A" onclick="disableOptions('q3'), playSound()"> A) Winston Churchill</label><br>
                     <label><input type="radio" name="q3" value="B" onclick="disableOptions('q3'), playSound()"> B) Lula</label><br>
-                    <label><input type="radio" name="q3" value="C" onclick="disableOptions('q3'), playSound()"> C) Bolosnaro</label><br>
+                    <label><input type="radio" name="q3" value="C" onclick="disableOptions('q3'), playSound()"> C) Bolsonaro</label><br>
                     <label><input type="radio" name="q3" value="D" onclick="disableOptions('q3'), playSound()"> D) Putin</label>
                 </section>
                 <section class="question">
@@ -65,6 +66,10 @@
                 <button type="submit" id="enviar" onclick="submitQuiz(event)">Enviar Respostas</button>
                 <button type="button" id="reenviar" onclick="restartQuiz()" disabled>Responder Novamente</button>
             </form>
+            <audio id="venceusom" src="som/venceu.mp3" preload="auto"></audio>
+            <audio id="selecionasom" src="som/seleciona.mp3" preload="auto"></audio>
+            <audio id="perdeusom" src="som/perdeu.mp3" preload="auto"></audio>
+
             <section id="result1"></section>
         </section>
    </main>
