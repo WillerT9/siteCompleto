@@ -40,6 +40,7 @@
 body{
     margin: 3px;
     background: var(--cor-3);
+    overflow-x: hidden;
 }
 
 main {
@@ -210,6 +211,10 @@ footer{
     text-align: center; /* Centraliza o conteúdo do produto */
 }
 
+h2{
+    font-family: "Bebas Neue", sans-serif;
+}
+
 img {
     max-width: 100%; /* Imagem responsiva */
     height: auto; /* Mantém a proporção da imagem */
@@ -316,21 +321,6 @@ button:hover{
     font-family: "Bebas Neue", sans-serif;
 }
 
-.quiz a{
-    text-decoration: none;
-    color: rgb(17, 2, 56);
-    font-size: 23px;
-    font-family: "Ubuntu", sans-serif;
-    background: rgb(129, 253, 255);
-    padding: 7px;
-    border-radius: 23px;
-    box-shadow: 1px 2px 3px black;
-}
-
-.quiz a:hover{
-    color: hsl(0, 100%, 50%);
-}
-
 .quiz-section{
     padding: 23px;
     border-radius: 10px;
@@ -338,6 +328,7 @@ button:hover{
     width: 600px;
     margin: 0 auto;
     margin-top: 0px;
+    background-color: white;
 }
 
 .quiz-section h2{
@@ -347,7 +338,6 @@ button:hover{
 .question{
     margin-bottom: 20px;
     font-family: "Open Sans", sans-serif;
-    
 }
 
 button:disabled{
@@ -363,3 +353,10 @@ button:disabled{
 
 }
 
+#result {
+    display: block;
+}
+
+.fundo{
+    background: var(--cor-gradient);
+}

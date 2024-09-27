@@ -187,6 +187,14 @@ function submitQuiz(event) {
         }
     }
 
+    if (score === 7) {
+        let successSound = document.getElementById('venceusom');
+        successSound.play();
+    }else if (score < 7) {
+        let defeatSound = document.getElementById('perdeusom');
+        defeatSound.play();
+    }
+
     // Desativa o botão de enviar
     document.getElementById('enviar').disabled = true;
 
