@@ -24,16 +24,16 @@
 }
 
 :root{
-    --color-1: yellow;
-    --cor-2:rgb(50, 69, 56);
-    --cor-3:rgb(255, 255, 255);
-    --cor-4:rgb(183, 254, 194);
-    --cor-5:white;
-    --cor-6:green;
-    --cor-7:rgb(182, 213, 255);
-    --cor-8:rgb(26, 26, 99);
-    --cor-9:rgb(123, 123, 123);   
-    --cor-gradient: linear-gradient(to right, var(--cor-2), var(--cor-4) )
+    --cor-1: #a8d5ba; /* Verde suave */
+    --cor-2: #4c8c61; /* Verde médio */
+    --cor-3: #ffffff; /* Branco */
+    --cor-4: #c8eacb; /* Verde claro */
+    --cor-5: #f0fdf4; /* Branco esverdeado */
+    --cor-6: #6dbf73; /* Verde */
+    --cor-7: #e0f5e8; /* Verde pastel */
+    --cor-8: #1a4d40; /* Verde mais escuro para contrastes */
+    --cor-9: #7f997a; /* Verde acinzentado */
+    --cor-gradient: linear-gradient(to right, var(--cor-2), var(--cor-4));
 
 }
 
